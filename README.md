@@ -30,7 +30,7 @@ use:
 ```javascript
 require('autostrip-json-comments');
 
-var obj = require('commented-json-filename');
+var obj = require('path/to/commented-json-filename');
 // comments are automatically stripped inside require
 ```
 
