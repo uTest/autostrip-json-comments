@@ -6,10 +6,7 @@ function setup() {
   var hook = require('./src/hook');
   var strip = require('strip-json-comments');
 
-  hook.hookJsonRequire(function (text, filename) {
-    var transformed = strip(text);
-    return transformed;
-  });
+  hook.hookJsonRequire(strip);
   installed = true;
 }
 
