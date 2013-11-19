@@ -8,10 +8,14 @@ gt.module('strips comments in require', {
   }
 });
 
-gt.test('loading json with comments', function () {
+gt.test('loading json with comments works', function () {
   var json = require('./commented');
-  console.log('json returned is', typeof json);
-  console.log(json);
   gt.object(json, 'returns an object');
   gt.ok(json.works, 'loaded commented json');
+});
+
+gt.test('loading json without comments is ok', function () {
+  var json = require('../package');
+  gt.object(json, 'returns an object');
+  gt.string(json.name, 'has name');
 });
