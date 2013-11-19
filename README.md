@@ -2,35 +2,40 @@
 
 > Installs nodejs require hook to strip JSON comments
 
-[![NPM][proud-icon]][proud-url]
+[![NPM][autostrip-json-comments-icon]][autostrip-json-comments-url]
 
-[![Build status][proud-ci-image]][proud-ci-url]
-[![dependencies][proud-dependencies-image]][proud-dependencies-url]
-[![devdependencies][proud-devdependencies-image]][proud-devdependencies-url]
+[![Build status][autostrip-json-comments-ci-image]][autostrip-json-comments-ci-url]
+[![dependencies][autostrip-json-comments-dependencies-image]][autostrip-json-comments-dependencies-url]
+[![devdependencies][autostrip-json-comments-devdependencies-image]][autostrip-json-comments-devdependencies-url]
 
 [![endorse][endorse-image]][endorse-url]
 
-[proud-icon]: https://nodei.co/npm/proud.png?downloads=true
-[proud-url]: https://npmjs.org/package/proud
-[proud-ci-image]: https://travis-ci.org/bahmutov/proud.png?branch=master
-[proud-ci-url]: https://travis-ci.org/bahmutov/proud
-[proud-dependencies-image]: https://david-dm.org/bahmutov/proud.png
-[proud-dependencies-url]: https://david-dm.org/bahmutov/proud
-[proud-devdependencies-image]: https://david-dm.org/bahmutov/proud/dev-status.png
-[proud-devdependencies-url]: https://david-dm.org/bahmutov/proud#info=devDependencies
-[endorse-image]: https://api.coderwall.com/bahmutov/endorsecount.png
-[endorse-url]: https://coderwall.com/bahmutov
+[autostrip-json-comments-icon]: https://nodei.co/npm/autostrip-json-comments.png?downloads=true
+[autostrip-json-comments-url]: https://npmjs.org/package/autostrip-json-comments
+[autostrip-json-comments-ci-image]: https://travis-ci.org/bahmutov/autostrip-json-comments.png?branch=master
+[autostrip-json-comments-ci-url]: https://travis-ci.org/bahmutov/autostrip-json-comments
+[autostrip-json-comments-dependencies-image]: https://david-dm.org/bahmutov/autostrip-json-comments.png
+[autostrip-json-comments-dependencies-url]: https://david-dm.org/bahmutov/autostrip-json-comments
+[autostrip-json-comments-devdependencies-image]: https://david-dm.org/bahmutov/autostrip-json-comments/dev-status.png
+[autostrip-json-comments-devdependencies-url]: https://david-dm.org/bahmutov/autostrip-json-comments#info=devDependencies
 
 
 
 ## Use
 
-```
-npm install -g proud
-proud 'username'
+install:
 
-// prints number of modules for 'username'
-// prints total number of downloads for all modules
+```
+npm install autostrip-json-comments --save
+```
+
+use:
+
+```javascript
+require('autostrip-json-comments');
+
+var obj = require('commented-json-filename');
+// comments are automatically stripped inside require
 ```
 
 
@@ -41,13 +46,13 @@ Because stripping comments from ALL json files should be automatic.
 
 ### Small print
 
-Author: Gleb Bahmutov &copy; 2013
+Author: Gleb Bahmutov Copyright &copy; 2013 [uTest](http://www.utest.com/)
 
-* [@bahmutov](https://twitter.com/bahmutov)
-* [glebbahmutov.com](http://glebbahmutov.com)
-* [blog](http://bahmutov.calepin.co/)
+* [@utest](https://twitter.com/utest)
+* [utest.com](http://utest.com)
+* [engineering blog](http://eng.utest.com/)
 
-License: MIT - do anything with the code, but don't blame me if it does not work.
+License: MIT - do anything with the code, but don't blame uTest if it does not work.
 
 Spread the word: tweet, star on github, click *endorse*, etc.
 

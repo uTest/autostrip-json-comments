@@ -4,13 +4,13 @@
 
 {%= _.doc("./docs/badges.md") %}
 
-## Use
-
 {%= _.doc("./docs/use.md") %}
 
 ## Why?
 
 Because stripping comments from ALL json files should be automatic.
+
+Uses [strip-json-comments](https://github.com/sindresorhus/strip-json-comments) internally.
 
 {%= _.doc("./docs/footer.md") %}
 

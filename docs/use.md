@@ -1,7 +1,14 @@
-```
-npm install -g proud
-proud 'username'
+install:
 
-// prints number of modules for 'username'
-// prints total number of downloads for all modules
+```
+npm install autostrip-json-comments --save
+```
+
+use:
+
+```javascript
+require('autostrip-json-comments');
+
+var obj = require('commented-json-filename');
+// comments are automatically stripped inside require
 ```
