@@ -1,0 +1,21 @@
+{
+  "name": "autostrip-json-comments",
+  "version": "0.0.0",
+  "description": "Installs nodejs require hook to strip JSON comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "comments",
+    "strip",
+    "nodejs",
+    "require"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "strip-json-comments": "~0.1.1"
+  }
+}

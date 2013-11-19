@@ -1,0 +1,6 @@
+// this JSON file is commented
+{
+  "name": "commented",
+  /* has several types of C-style comments */
+  "works": true
+}
