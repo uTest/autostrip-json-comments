@@ -1,7 +1,14 @@
-gt.module('strips comments in require');
+gt.module('strips comments in require', {
+  setupOnce: function() {
+    require('../index');
+  },
+  teardownOnce: function () {
 
-// installs hook
-require('../index');
+  }
+});
+
+// installs JSON require hook
+// require('../index');
 
 gt.test('loading json with comments', function () {
   var json = require('./commented');
