@@ -3,12 +3,10 @@ gt.module('strips comments in require', {
     require('../index');
   },
   teardownOnce: function () {
-
+    require('../src/hook').unhookJsonRequire();
+    require('../src/hook').unloadJsonCache();
   }
 });
-
-// installs JSON require hook
-// require('../index');
 
 gt.test('loading json with comments', function () {
   var json = require('./commented');

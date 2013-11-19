@@ -70,7 +70,11 @@ function transformFn(matcher, transformer, verbose) {
 }
 */
 
-function unloadRequireCache(matcher) {
+function unloadJsonCache() {
+    function matcher(filename) {
+        return /\.json$/.test(filename);
+    }
+
     if (matcher && typeof require !== 'undefined' && require && require.cache) {
         Object.keys(require.cache).forEach(function (filename) {
             if (matcher(filename)) {
@@ -160,6 +164,6 @@ module.exports = {
     unhookCreateScript: unhookCreateScript,
     hookRunInThisContext : hookRunInThisContext,
     unhookRunInThisContext : unhookRunInThisContext,*/
-    unloadRequireCache: unloadRequireCache
+    unloadJsonCache: unloadJsonCache
 };
 

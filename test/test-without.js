@@ -7,3 +7,9 @@ gt.test('loading json without comments', function () {
   gt.object(json, 'returns an object');
   gt.string(json.name, 'has name');
 });
+
+gt.test('loading commented json', function () {
+  gt.raises(function () {
+    var json = require('./commented.json');
+  }, 'Exception');
+});

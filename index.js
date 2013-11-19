@@ -8,11 +8,8 @@ function setup() {
 
   hook.hookJsonRequire(function (text, filename) {
     var transformed = strip(text);
-    console.log(typeof transformed);
     return transformed;
   });
-  console.log('installed json load hook');
-
   installed = true;
 }
 
