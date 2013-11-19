@@ -6,14 +6,10 @@ module.exports = function (grunt) {
   var plugins = require('matchdep').filterDev('grunt-*');
   plugins.forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('quality', ['nice-package', 'jshint']);
+  grunt.registerTask('quality', ['nice-package', 'jshint', 'readme']);
   grunt.registerTask('default', ['quality']);
 
-  var pkg = grunt.file.readJSON('package.json');
-
   grunt.initConfig({
-    pkg: pkg,
-
     readme: {
       options: {
         readme: './docs/README.tpl.md',

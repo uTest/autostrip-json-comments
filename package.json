@@ -19,6 +19,10 @@
     "npm install",
     "npm test"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uTest/autostrip-json-comments.git"
+  },
   "author": "Gleb Bahmutov <gleb.bahmutov@utest.com>",
   "license": "MIT",
   "dependencies": {
