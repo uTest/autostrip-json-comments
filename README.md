@@ -21,8 +21,6 @@
 
 
 
-## Use
-
 install:
 
 ```
@@ -43,6 +41,8 @@ var obj = require('commented-json-filename');
 ## Why?
 
 Because stripping comments from ALL json files should be automatic.
+
+Uses [strip-json-comments](https://github.com/sindresorhus/strip-json-comments) internally.
 
 ### Small print
 
