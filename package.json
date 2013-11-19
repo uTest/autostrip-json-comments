@@ -13,12 +13,19 @@
     "nodejs",
     "require"
   ],
-  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "pre-commit": "npm test",
+  "pre-push": [
+    "rm -rf node_modules",
+    "npm install",
+    "npm test"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@utest.com>",
   "license": "MIT",
   "dependencies": {
     "strip-json-comments": "~0.1.1"
   },
   "devDependencies": {
-    "gt": "~0.8.20"
+    "gt": "~0.8.20",
+    "pre-git": "0.0.13"
   }
 }
