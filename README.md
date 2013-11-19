@@ -1,4 +1,4 @@
-# autostrip-json-comments v0.0.1
+# autostrip-json-comments v0.0.2
 
 > Installs nodejs require hook to strip JSON comments
 
