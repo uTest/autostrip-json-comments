@@ -1,6 +1,6 @@
 {
   "name": "autostrip-json-comments",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Installs nodejs require hook to strip JSON comments",
   "main": "index.js",
   "scripts": {

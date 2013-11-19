@@ -21,8 +21,7 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '*.js',
-        'src/**/*.js',
-        '!src/hook.js'
+        'src/**/*.js'
       ],
       options: {
         jshintrc: '.jshintrc',

@@ -1,6 +1,8 @@
 gt.module('strips comments in require', {
   setupOnce: function() {
     require('../index');
+    // multiple requires are guarded
+    require('../index');
   },
   teardownOnce: function () {
     require('../src/hook').unhookJsonRequire();

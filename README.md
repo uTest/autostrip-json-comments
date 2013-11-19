@@ -1,4 +1,4 @@
-# autostrip-json-comments v0.0.2
+# autostrip-json-comments v0.0.3
 
 > Installs nodejs require hook to strip JSON comments
 
@@ -7,8 +7,6 @@
 [![Build status][autostrip-json-comments-ci-image]][autostrip-json-comments-ci-url]
 [![dependencies][autostrip-json-comments-dependencies-image]][autostrip-json-comments-dependencies-url]
 [![devdependencies][autostrip-json-comments-devdependencies-image]][autostrip-json-comments-devdependencies-url]
-
-[![endorse][endorse-image]][endorse-url]
 
 [autostrip-json-comments-icon]: https://nodei.co/npm/autostrip-json-comments.png?downloads=true
 [autostrip-json-comments-url]: https://npmjs.org/package/autostrip-json-comments
